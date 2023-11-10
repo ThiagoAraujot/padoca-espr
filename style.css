@@ -1,5 +1,12 @@
-h1{}
+body{
+  margin: 0 4rem;
+}
 
-.classe {}
+.display-none {
+  display: none;
+}
 
-#id{}
+.display-flex {
+  display: flex;
+  flex-direction: column;
+}
