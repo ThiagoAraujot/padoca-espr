@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Padoca da Vila</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Gerenciador de produtos</h1>
-    <button id="new-product">Novo Produto</button>
 
-    <form id="form-insert" class="display-none">
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome"/>
+    <section class="form-product">
+      <h1>Gerenciador de Produtos</h1>
+      <button class="button-new-product" id="new-product">Novo Produto</button>
+  
+      <form id="form-insert" class="display-none">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome"/>
+  
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="preco"/>
+  
+        <label for="quantidade">Quantidade</label>
+        <input type="number" name="quantidade" id="quantidade"/>
+  
+        <button type="button" id="cadastrar">Cadastrar</button>
+      </form>
+  
+      <form id="form-update" class="display-none">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nomeUpdate"/>
+  
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="precoUpdate"/>
+  
+        <label for="quantidade">Quantidade</label>
+        <input type="number" name="quantidade" id="quantidadeUpdate"/>
+  
+        <button type="button" id="update">Atualizar</button>
+      </form>
+    </section>
 
-      <label for="preco">Preço</label>
-      <input type="text" name="preco" id="preco"/>
 
-      <label for="quantidade">Quantidade</label>
-      <input type="number" name="quantidade" id="quantidade"/>
-
-      <button type="button" id="cadastrar">Cadastrar</button>
-    </form>
-
-    <form id="form-update" class="display-none">
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nomeUpdate"/>
-
-      <label for="preco">Preço</label>
-      <input type="text" name="preco" id="precoUpdate"/>
-
-      <label for="quantidade">Quantidade</label>
-      <input type="number" name="quantidade" id="quantidadeUpdate"/>
-
-      <button type="button" id="update">Atualizar</button>
-    </form>
-
-    <h2>Listagem de produtos</h2>
-    <section id="lista-produtos">
-      <table id="table-produtos">
+    
+    <section id="lista-produtos" class="list-products">
+      <h2>Listagem de produtos</h2>
+      <table id="table-produtos" class="table-product">
         <thead>
           <tr>
             <th>Nome</th>
